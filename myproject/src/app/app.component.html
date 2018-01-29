@@ -1,0 +1,59 @@
+
+<div class="navdiv">
+    <h1>
+        {{title}}!
+      </h1>
+      <button type="button" class="btn btn-primary" style="margin-left: 600px" (click)="toStep(1)" >Home</button>
+      <button type="button" class="btn btn-primary" style="margin-left: 400px" (click)="toStep(2)" >View Book</button>
+</div>
+
+<div class="subdiv"  *ngIf="step == 1" >
+  <b><p style="padding-top: 100px; color: brown; margin-left: 300px">
+      To read ebooks, you don’t need a tablet or e-reader. You can read books online, in your internet browser.      Nowadays, the internet is a major tool to 
+      <br>
+      <br>
+      find products we need. With more and more content going digital. But what “read books online” means exactly? It means you won’t need any of these:
+      <br>
+      <br>
+      * a special device, like an Kindle e-reader or Samsung tablet,
+      <br>
+      <br>
+      * a special application or browser extension.
+      <br>
+      <br>
+      All you need is a computer connected to the internet, and the application you use most: the internet browser like Chrome, Firefox or Internet Explorer.
+  </p></b>
+  
+</div>
+<div  class="subdiv" >
+    <div class="tableview" *ngIf="step == 2" style="padding-top: 100px">
+        <table class="tableclass">
+            <tr>
+                <th>Book Name</th>
+                <th>Author Name</th> 
+                <th> </th>
+                </tr>
+                <tr>
+                    <td>Pride and Prejudice</td>
+                    <td>Jane Austen</td>
+                    <td><a href="https://www.librarything.com/work/2773690">Read</a></td>
+                </tr>
+                <tr>
+                        <td>A Tale of Two Cities</td>
+                        <td>Charles Dickens</td>
+                        <td><a href="https://www.librarything.com/work/17728">Read</a></td>
+                </tr>
+                <tr>
+                            <td>The Scarlet Letter</td>
+                            <td>Nathaniel Hawthorne</td>
+                            <td><a href="https://www.librarything.com/work/2264">Read</a></td>
+                </tr>
+                <tr>
+                            <td>Anna Karenina</td>
+                            <td> Leo Tolstoy</td>
+                            <td><a href="https://www.librarything.com/work/2340">Read</a></td>
+                 </tr>
+        </table>
+    </div>
+  </div>
+
